@@ -52,7 +52,7 @@ form[action="/search"] input {
 .gbqfi { background-position: -203px -57px !important }
 
 /* Navigation bars */
-#hdtb, #hdtbSum, #appbar, #hdtbMenus { background: transparent !important }
+#cnt, #hdtb, #hdtbSum, #appbar, #hdtbMenus { background: transparent !important }
 
 #hdtbSum {
   background: rgba(24, 24, 24, 0.4) !important;

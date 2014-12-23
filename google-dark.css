@@ -1,0 +1,107 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document url-prefix("http://www.google."), url-prefix("https://www.google."), url-prefix("http://google."), url-prefix("https://google."), domain("g.cn") {
+
+/* TODO:
+ *  buttons
+ *  menus/autocomplete popup
+ *  maybe other issues if user is logged in
+ */
+
+*::-moz-placeholder { color: #444 !important }
+*::-moz-selection {
+    background-color: #4183c4 !important;
+    color: #fff !important;
+}
+
+body {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkAgMAAAANjH3HAAAACVBMVEUaGhohISElJSUh9lebAAAB20lEQVRIx4XWuZXDMAwE0C0SAQtggIIYoAAEU+aKOHhYojTrYP2+QfOW/5QIJOih/q8HwF/pb3EX+UPIveYcQGgEHiu9hI+ihEc5Jz5KBIlRRRaJ1JtoSAl5Hw96hLB1/up1tnIXOck5jZQy+3iU2hAOKSH1JvwxHsp+5TLF5MOl1/MQXsVs1miXc+KDbYydyMeUgpPQreZ7fWidbNhkXNJSeAhc6qHmHD8AYovunYyEACWEbyIhNeB9fRrH3hFi0bGPLuEW7xCNaohw1vAlS805nfsrTspclB/hVdoqusg53eH7FWot+wjYpOViX8KbFFKTwlnzvj65P9H/vD0/hibYBGhPwlPO8TmxRsaxsNnrUmUXpNhirlJMPr6Hqq9k5Xn/8iYQHYIuQsWFC6Z87IOxLxHphSY4SpuiU87xJnJr5axfeRd+lnMExXpEWPpuZ1v7qZdNBOjiHzDREHX5fs5Zz9p6X0vVKbKKchlSl5rv+3p//FJ/PYvoKryI8vs+2G9lzRmnEKkh+BU8yDk515jDj/HAswu7CCz6U/Mxb/PnC9N41ndpU4hUU7JGk/C9PmP/M2xZYdvBW2PObyf1IUiIzoHmHW9yTncliYs9A9tVNppdShfgQaTLMf+j3X723tLeHgAAAABJRU5ErkJggg==") #222 !important;
+  color: #c4c4c4 !important;
+}
+
+a { color: #4183c4 }
+
+/* Main header */
+.gb_Ub {
+  background: #181818 !important;
+  border-bottom: 1px solid #333 !important
+}
+
+/* Main header navigation */
+#gb#gb a.gb_e, #gb#gb a.gb_f { color: #5e5e5e !important }
+#gb#gb a.gb_f:hover, #gb#gb a.gb_f:focus { color: #808080 !important }
+
+/* Main Menu icon */
+.gb_B .gb_C { background-position: -56px -70px !important }
+
+/* Search form */
+.gbqfqw, 
+._zF, .mslg .ab_button, .mslg .kpgrb /* For search form inside results column (e.g. ?q=asda) */
+  { border: 1px solid #444 !important }
+
+.gbqfqw, .sbib_a {
+  background: #181818 !important;
+}
+form[action="/search"] input {
+    -moz-appearance: none !important;
+    background: #181818 !important;
+    color: #eee !important;
+}
+
+/* Search form submit button symbol */
+.gbqfi { background-position: -203px -57px !important }
+
+/* Navigation bars */
+#hdtb, #hdtbSum, #appbar, #hdtbMenus { background: transparent !important }
+
+#hdtbSum {
+  background: rgba(24, 24, 24, 0.4) !important;
+  border-bottom: 1px solid #333 !important
+}
+
+.hdtbItm label:hover, .hdtbItm a:hover, #hdtb_more_mn a:hover, #hdtb .hdtb_mitem a:hover, .hdtb-mn-hd:hover, #hdtb_more:hover, #hdtb_tls:hover {
+  color: #ccc !important
+}
+.hdtb-mn-hd:hover .mn-dwn-arw, #hdtb_more:hover .mn-dwn-arw {
+  border-color: #ccc transparent !important
+}
+
+/* Results */
+#rcnt a { color: #4183c4 !important }
+
+.s { color: #808080 !important }
+.f, .f a:link { color: #545454 !important }
+
+/* Result "More options"-menu arrow */
+._Fmb { background: transparent !important }
+
+/* Infobox above results (e.g ?q=horse speed) */
+div.rl_feature { background: rgba(24, 24, 24, 0.4) !important }
+.rlc__slider, .rlc__slider-page, .rl_item { background: none }
+.rl_item, .rl_center { border-color: #cbcbcb }
+.rl_feature .kxbcl, .rl_feature .lxhdrbox { color: #c4c4c4 !important }
+.rl_item .title { color: #c4c4c4 }
+
+a.rl_item:hover, #appbar .rl_item.rl_selected { background-color: #292929 }
+
+/* Infobox next to results (e.g. ?q=horse) */
+.kp-blk {
+  background: #181818 !important;
+  box-shadow: 0 1px 4px 0 rgba(255, 255, 255, 0.2)
+}
+/* Infobox Title */
+.kno-ecr-pt { color: inherit !important; }
+
+/* Related searches Title */
+#brs .med { color: #545454 !important }
+
+/* Footer */
+#fbar {
+  background: rgba(24, 24, 24, 0.4) !important;
+  border-top: 1px solid #333 !important
+}
+  
+._HR a, #swml a:hover { color: #ccc !important }
+.fbar a:hover, #fsett a:hover { color: #bbb !important }
+
+}
